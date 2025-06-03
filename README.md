@@ -22,7 +22,7 @@ This project serves as a **comprehensive case study** for building production-re
 - **Actor Model Concurrency**: Leveraging OTP GenServers for isolated, concurrent AI processing
 - **Fault Tolerance**: Supervisor trees ensuring system resilience during AI model failures  
 - **Real-time Communication**: Phoenix LiveView for zero-latency user interactions
-- **Resource Management**: Efficient memory and compute allocation for ML workloads
+- **Resource Management**: Efficient memory and compute allocation for ML workloads (budget allocation)
 - **Distributed Computing**: Preparation for multi-node clustering and horizontal scaling
 
 ---
@@ -33,19 +33,19 @@ This project serves as a **comprehensive case study** for building production-re
 ┌─────────────────────────────────────────────────────────┐
 │                    ArXiv Explorer                       │
 ├─────────────────────────────────────────────────────────┤
-│  Phoenix LiveView (Real-time UI)                       │
-│  ├── SearchLive: Interactive paper discovery           │
-│  └── WebSocket: Sub-50ms response times                │
+│  Phoenix LiveView (Real-time UI)                        │
+│  ├── SearchLive: Interactive paper discovery            │
+│  └── WebSocket: Sub-50ms response times                 │
 ├─────────────────────────────────────────────────────────┤
-│  OTP Application Layer                                 │
-│  ├── LLM.Server: GenServer managing T5 model          │
-│  ├── ArxivApi: HTTP client with connection pooling    │
-│  └── Supervisor Tree: Fault-tolerant process mgmt     │
+│  OTP Application Layer                                  │
+│  ├── LLM.Server: GenServer managing T5 model            │
+│  ├── ArxivApi: HTTP client with connection pooling      │
+│  └── Supervisor Tree: Fault-tolerant process mgmt       │
 ├─────────────────────────────────────────────────────────┤
-│  Machine Learning Stack                                │
-│  ├── Bumblebee: Local transformer execution           │
-│  ├── EXLA: Accelerated tensor operations              │
-│  └── T5-Small: Text summarization & keyword extraction │
+│  Machine Learning Stack                                 │
+│  ├── Bumblebee: Local transformer execution             │
+│  ├── EXLA: Accelerated tensor operations                │
+│  └── T5-Small: Text summarization & keyword extraction  │
 └─────────────────────────────────────────────────────────┘
 ```
 
