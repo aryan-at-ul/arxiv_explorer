@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "deploy": "NODE_ENV=production tailwind default --minify && NODE_ENV=production esbuild js/app.js --bundle --minify --outfile=../priv/static/assets/app.js --external:/fonts/* --external:/images/*"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "autoprefixer": "^10.4.16",
+    "esbuild": "^0.19.11",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0"
+  }
+}
