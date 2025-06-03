@@ -2,6 +2,12 @@
 
 > **A distributed, fault-tolerant AI-powered research paper discovery platform built with Elixir/Phoenix**
 
+
+| ![UI](assets/ui.png) |
+|:--:|
+
+
+
 [![Elixir](https://img.shields.io/badge/Elixir-1.16+-purple.svg)](https://elixir-lang.org)
 [![Phoenix](https://img.shields.io/badge/Phoenix-1.7+-orange.svg)](https://phoenixframework.org)
 [![LiveView](https://img.shields.io/badge/LiveView-Real--time-blue.svg)](https://hexdocs.pm/phoenix_live_view)
