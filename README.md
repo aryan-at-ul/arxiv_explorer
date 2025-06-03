@@ -60,7 +60,7 @@ This project serves as a **comprehensive case study** for building production-re
 | **Real-time** | Native WebSocket/LiveView | Requires additional libraries |
 | **Memory Usage** | ~2.5MB per process | ~50MB+ per worker |
 | **Latency** | Sub-millisecond message passing | GIL bottlenecks |
-| **Scaling** | Linear horizontal scaling | Vertical scaling limitations |
+<!-- | **Scaling** | Linear horizontal scaling | Vertical scaling limitations | -->
 | **Hot Deployment** | Zero-downtime code updates | Requires orchestration |
 
 ### Elixir's Distributed Systems Superpowers
@@ -155,14 +155,14 @@ Visit [http://localhost:4000](http://localhost:4000) and start exploring papers!
 ### Concurrency Test Results
 ```
 Concurrent Users: 1,000
-Search Requests: 10,000
-AI Analysis Requests: 5,000
+Search Requests: 1,000 # issue in benchmarking with live arxiv api
+AI Analysis Requests: 100 # the real bottlneck!! 
 
 Average Response Time: 45ms
 99th Percentile: 120ms  
 Memory Usage: 85MB
 CPU Usage: 23%
-Error Rate: 0.001%
+Error Rate: 0.001% # excluding api closed connection issue with arciv api
 ```
 
 ### Resource Efficiency
