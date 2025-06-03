@@ -249,7 +249,7 @@ mix format
 2. **Pattern Matching**: Declarative, bug-resistant code style  
 3. **OTP Behaviors**: Proven patterns for building robust systems
 4. **Distribution**: Built for the cloud-native era from day one
-5. **Observability**: Rich introspection and debugging tools
+<!-- 5. **Observability**: Rich introspection and debugging tools -->
 
 ---
 <!-- 
